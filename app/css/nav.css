@@ -1,0 +1,47 @@
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    background: darkorange;
+    padding: 20px 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.navLinks li {
+    list-style: none;
+    margin: 0 12px;
+
+}
+
+.navLinks li a {
+    position: relative;
+    color: blanchedalmond;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 0;
+    text-decoration: none;
+}
+
+.navLinks li a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: blanchedalmond;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+}
+
+
+.navLinks li a:hover:before {
+    width: 100%;
+}
+
+.navLinks li.center a:before {
+    left: 50%;
+    transform: translateX(-50%);
+}
